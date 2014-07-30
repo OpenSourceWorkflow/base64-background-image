@@ -40,5 +40,5 @@ Installation
 ------------
 
 ```bash
-bower install markusfalk/base64-background-image
+bower install base64-background-image
 ```
