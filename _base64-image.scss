@@ -1,0 +1,7 @@
+@mixin base64-image-retina($url) {
+  background-repeat: no-repeat;
+  background-image: inline-image($url + '.svg');
+  .no-svg & {
+    background-image: image-url($url + '.png');
+  }
+}

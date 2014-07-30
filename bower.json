@@ -1,0 +1,17 @@
+{
+  "name": "base64-image",
+  "version": "1.0.0",
+  "homepage": "https://github.com/markusfalk/base64-image",
+  "authors": [
+    "Markus Falk <mail@markus-falk.com>"
+  ],
+  "description": "scss mixin for creating svg base64 background-image width png fallback",
+  "main": "_base64-image.scss",
+  "keywords": [
+    "base64",
+    "svg",
+    "png",
+    "background"
+  ],
+  "license": "MIT"
+}
