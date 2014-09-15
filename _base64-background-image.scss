@@ -1,7 +1,23 @@
-@mixin base64-background-image($url) {
+@mixin base64-background-image($url, $altFallback:"") {
+
+  // scope
+  $fallbackURL: "";
+
+  // use alternate fallback image if given
+  @if $altFallback == "" {
+    $fallbackURL: $url;
+  } @else {
+    $fallbackURL: $altFallback;
+  }
+
+  // default use case: single icon
   background-repeat: no-repeat;
+
+  // svg
   background-image: inline-image($url + '.svg');
+
+  // png fallback
   .no-svg & {
-    background-image: image-url($url + '.png');
+    background-image: image-url($fallbackURL + '.png');
   }
 }
