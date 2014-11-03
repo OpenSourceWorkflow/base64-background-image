@@ -1,10 +1,16 @@
-base64-background-image
-============
+# base64-background-image
 
 scss mixin for creating svg base64 background-image width png fallback
 
-Usage Example
--------------
+## Options
+
+```scss
+  $url; // path to svg file without '.svg'
+  $useFallback: true; // create no-svg fallback?
+  $altFallback:""; // specify custom fallback image instead of <name>.png
+```
+
+## Usage Example
 
 ```scss
 // fallback png has same name as svg icon
@@ -50,15 +56,13 @@ Generates
 }
 ```
 
-Requirements
-------------
+## Requirements
 
 * SVG feature detection with class: 'no-svg'
 * Compass
 * SASS
 
-Installation
-------------
+## Installation
 
 ```bash
 bower install base64-background-image

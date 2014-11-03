@@ -1,4 +1,4 @@
-@mixin base64-background-image($url, $altFallback:"") {
+@mixin base64-background-image($url, $useFallback: true, $altFallback:"") {
 
   // scope
   $fallbackURL: "";
@@ -17,7 +17,9 @@
   background-image: inline-image($url + '.svg');
 
   // png fallback
-  .no-svg & {
-    background-image: image-url($fallbackURL + '.png');
+  @if $useFallback {
+    .no-svg & {
+      background-image: image-url($fallbackURL + '.png');
+    }
   }
 }
