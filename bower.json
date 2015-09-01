@@ -1,7 +1,7 @@
 {
   "name": "base64-background-image",
-  "version": "2.0.1",
-  "homepage": "https://github.com/markusfalk/base64-image",
+  "version": "2.0.2",
+  "homepage": "https://github.com/OpenSourceWorkflow/base64-background-image",
   "authors": [
     "Markus Falk <mail@markus-falk.com>"
   ],
