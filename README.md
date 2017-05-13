@@ -1,5 +1,9 @@
 # base64-background-image
 
+![Project is deprecated!](https://cdn.rawgit.com/OpenSourceWorkflow/generator-kickstart/master/deprecation-warning.svg)
+
+This project has been deprecated!
+
 scss mixin for creating svg base64 background-image width png fallback
 
 ## Options
